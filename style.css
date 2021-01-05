@@ -33,6 +33,7 @@ a {
     background: #222222;
     left: -300px;
     transition: .8s;
+    box-shadow: 16px 0px 2px#191970;
 }
 
 #sidebar.active {
@@ -43,6 +44,7 @@ a {
     position: absolute;
     top: 30px;
     left: 330px;
+    cursor: pointer;
 }
 
 .toggle-btn span {
@@ -54,32 +56,47 @@ a {
     transform: translateX(-16px);
 }
 
-@media 
+a:hover {
+    font-weight: bold;
+    opacity: 0.5;
+    transition: .2s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    ul {
+        font-size: 12px;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    a {
+        line-height: 25px;
+    }
+
+    #sidebar {
+        width: 100px;
+        height: 100%;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 10px;
+    }
+
+    .toggle-btn span {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
 
 
-
-
-/* Place tabs under the hamburger menu */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Close sidebar via button for mobile */
+/* Transform button */
 
 
