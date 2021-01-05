@@ -6,127 +6,80 @@
 }
 
 body {
-    background: #272727;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) { 
-    .topnav {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 3px solid #fff;
-    }
-
-    .menu-btn_burger {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(, 255, 101, 47, .2);
-    transition: all .5s ease-in-out;
-    }
-
-    .menu-btn_burger::before {
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 6px;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba( 255, 101, 47, .2);
-        transition: all .5s ease-in-out;
-    }
-
-    .menu-btn_burger::before {
-        transform: translateY(-16px);
-        transform: translateX(55px);
-    }
-
-    /* Animation */
-    .topnav.open .menu-btn_burger {
-        transform: translateX(-15px);
-        background: transparent;
-        box-shadow: none;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .topnav {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        border: 3px solid #fff;
-    }
-
-    .menu-btn_burger {
-        width: 50px;
-        height: 6px;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, rgba( 255, 101, 47, .2));
-        transition: all .5s ease-in-out;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
-
-}
-
-@media only screen and (min-width: 1401px) and (min-width: 4500px) {
-
-}
-
-
-
-
-
-
-
-/* Slide out menu */
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 100;
+ul {
+    list-style: none;
+    padding: 12px 20px;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 li {
-    list-style-type: none;
-    padding: 20px 24px;
+    padding: 20px 20px;
 }
 
-#link-list {
-    visibility: hidden;
+a {
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
 }
 
-.open {
-    width: 100%;
+#sidebar {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: #222222;
+    left: -300px;
+    transition: .8s;
 }
 
+#sidebar.active {
+    left: 0;
+}
 
-/* Why transform translateX() keeps putting both elements in same spot */
+.toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-top: 4px;
+    transform: translateX(-16px);
+}
+
+@media 
+
+
+
+
+/* Place tabs under the hamburger menu */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
