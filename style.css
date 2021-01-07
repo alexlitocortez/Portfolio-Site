@@ -26,6 +26,12 @@ a {
     justify-content: space-around;
 }
 
+a:hover {
+    font-weight: bold;
+    opacity: 0.5;
+    transition: .2s ease-in-out;
+}
+
 #sidebar {
     position: absolute;
     width: 200px;
@@ -33,7 +39,6 @@ a {
     background: #222222;
     left: -300px;
     transition: .8s;
-    box-shadow: 16px 0px 2px#191970;
 }
 
 #sidebar.active {
@@ -52,31 +57,34 @@ a {
     height: 4px;
     background: #000;
     display: block;
-    margin-top: 4px;
-    transform: translateX(-16px);
+    position: absolute;
+    top: 20px;    
 }
 
-a:hover {
-    font-weight: bold;
-    opacity: 0.5;
-    transition: .2s ease-in-out;
+.toggle-btn span:nth-child(2) {
+    top: 25px;
 }
 
-@media only screen and (max-width: 767px) {
-    ul {
-        font-size: 12px;
-    }
+.toggle-btn span:nth-child(3) {
+    top: 30px;
+}
 
-    li {
-        padding: 0;
-    }
+.toggle-btn span:nth-child(4) {
+    top: 35px;
+}
 
-    a {
-        line-height: 25px;
+
+
+/* Media Queries */
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    #sidebar.active .toggle-btn {
+        transform: translateX(5%);
     }
 
     #sidebar {
-        width: 100px;
+        width: 50%;
         height: 100%;
     }
 
@@ -91,12 +99,43 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    #sidebar.active .toggle-btn {
+        transform: translateX(300px);
+    }
 
+    #sidebar.active {
+        width: 75%;
+        height: 10%;
+    }
+
+    ul {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 2500px) {
+    #sidebar.active .toggle-btn {
+        transform: translateX(400px);
+    }
+
+    #sidebar.active {
+        width: 50%;
+        height: 10%;
+    }
+
+    ul {
+        display: flex;
+    }
 }
 
 
-/* Close sidebar via button for mobile */
+
+
+
+/* X button to close menu for mobile (300px) */
 /* Transform button */
 
 
+
+/* To move the toggle button when I slide out the menu, use "transform: translateX();" */
