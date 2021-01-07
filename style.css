@@ -29,7 +29,7 @@ a {
 a:hover {
     font-weight: bold;
     opacity: 0.5;
-    transition: .2s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 #sidebar {
@@ -47,7 +47,7 @@ a:hover {
 
 .toggle-btn {
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 330px;
     cursor: pointer;
 }
@@ -59,20 +59,43 @@ a:hover {
     display: block;
     position: absolute;
     top: 20px;    
+    transition: .5s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
 }
 
 .toggle-btn span:nth-child(2) {
-    top: 25px;
-}
-
-.toggle-btn span:nth-child(3) {
     top: 30px;
 }
 
-.toggle-btn span:nth-child(4) {
-    top: 35px;
+.toggle-btn span:nth-child(3) {
+    top: 40px;
 }
 
+.toggle-btn span:nth-child(4) {
+    top: 50px;
+}
+
+/* Animation effect on toggle button (hover) */
+
+.toggle-btn.open span:nth-child(1) {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.toggle-btn.open span:nth-child(4) {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.toggle-btn.open span:nth-child(2) {
+    transform: rotate(45deg);
+    transition-delay: .2s;
+}
+
+.toggle-btn.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    transition-delay: .2s;
+}
 
 
 /* Media Queries */
@@ -97,7 +120,18 @@ a:hover {
         width: 20px;
         height: 2px;
     }
+
+    .toggle-btn:hover span:nth-child(2) {
+        transform: rotate(45deg);
+        transition-delay: .2s;
+    }
+
+    .toggle-btn:hover span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        transition-delay: .2s;
+    }
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
     #sidebar.active .toggle-btn {
@@ -133,8 +167,7 @@ a:hover {
 
 
 
-/* X button to close menu for mobile (300px) */
-/* Transform button */
+/* Maybe only have hamburger menu for mobile and regular menu for desktop */
 
 
 
