@@ -20,6 +20,10 @@ li {
     padding: 20px 20px;
 }
 
+nav {
+    left: 0;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -42,7 +46,6 @@ a:hover {
 }
 
 #sidebar.active {
-    left: 0;
 }
 
 .toggle-btn {
@@ -105,11 +108,9 @@ a:hover {
     transform: rotate(0deg);
 }
 
-
 /* Media Queries */
 
-
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
     #sidebar.active .toggle-btn {
         transform: translateX(5%);
     }
@@ -166,12 +167,37 @@ a:hover {
         height: 10%;
     }
 
+    .toggle-btn {
+        position: absolute;
+        left: 400px;
+    }
+
     ul {
         display: flex;
     }
+
+    .toggle-btn:hover span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .toggle-btn:hover span:nth-child(2) {
+        transform: rotate(45deg);
+        transition-delay: .2s;
+    }
+
+    .toggle-btn:hover span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        transition: .2s;
+    }
+
+    .toggle-btn:hover span:nth-child(4) {
+        transform: translateY(10px);
+    }
 }
 
-@media only screen and (min-width: 2501px) and (max-width: 4000px) {
+
+
+@media only screen and (min-width: 2501px) and (max-width: 5000px) {
     #sidebar.active .toggle-btn {
         transform: translateX(5%);
     }
@@ -183,7 +209,7 @@ a:hover {
 
     .toggle-btn {
         position: absolute;
-        top: 10px;
+        top: 10%;
     }
 
     .toggle-btn span {
@@ -204,7 +230,7 @@ a:hover {
 
 
 
-
+/* Why is menu still clickable */
 
 /* How to close X when you cancel slide out menu */
 
