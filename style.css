@@ -28,24 +28,14 @@ a {
     visibility: hidden;
 }
 
+a.active {
+    visibility: visible;
+}
+
 a:hover {
     font-weight: bold;
     opacity: 0.5;
     transition: .4s ease-in-out;
-}
-
-#sidebar {
-    position: absolute;
-    width: 200px;
-    height: 100%;
-    background: #222222;
-    left: -300px;
-    transition: .8s;
-}
-
-#sidebar.active {
-    left: 0;
-    visibility: visible;
 }
 
 .hero-image {
@@ -57,233 +47,38 @@ a:hover {
     
 }
 
-.toggle-btn {
-    position: absolute;
-    top: 20px;
-    left: 330px;
-    cursor: pointer;
-}
-
-.toggle-btn span {
-    width: 45px;
-    height: 4px;
-    background: #000;
-    display: block;
-    position: absolute;
-    top: 20px;    
-    transition: .5s;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
-}
-
-.toggle-btn span:nth-child(2) {
-    top: 30px;
-}
-
-.toggle-btn span:nth-child(3) {
-    top: 40px;
-}
-
-.toggle-btn span:nth-child(4) {
-    top: 50px;
-}
-
-/* Animation effect on toggle button (hover) */
-
-.toggle-btn.open span:nth-child(1) {
-    transform: translateY(-20px);
-    opacity: 0;
-}
-
-.toggle-btn.open span:nth-child(4) {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-.toggle-btn.open span:nth-child(2) {
-    transform: rotate(45deg);
-    transition-delay: .2s;
-}
-
-.toggle-btn.open span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-    transition-delay: .2s;
-}
-
-.toggle-btn.close span:nth-child(2) {
-    transform: rotate(0deg);
-}
-
-.toggle-btn.close span:nth-child(3) {
-    transform: rotate(0deg);
-}
 
 /* Media Queries */
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
-    #sidebar.active {
-        position: absolute;
-        top: 40%;
-        width: 50%;
-        height: 10%;
-    }
-
-    #sidebar.active .toggle-btn{
-        position: relative;
-        top: 30%;
-        transform: translateX(450px);
-    }
-
-    .toggle-btn {
-        position: absolute;
-        top: 10px;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    .toggle-btn:hover span:nth-child(1) {
-        transform: translateY(-15px);
-    }
-
-    .toggle-btn:hover span:nth-child(2) {
-        transform: rotate(45deg);
-        transition-delay: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-        transition: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(4) {
-        transform: translateY(10px);
-    }
+ 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1400px) {
-    #sidebar.active {
-        position: absolute;
-        top: 40%;
-        width: 50%;
-        height: 10%;
-    }
 
-    #sidebar.active .toggle-btn{
-        position: relative;
-        top: 30%;
-        transform: translateX(450px);
-    }
 
-    .toggle-btn {
-        position: absolute;
-        top: 10px;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    .toggle-btn:hover span:nth-child(1) {
-        transform: translateY(-15px);
-    }
-
-    .toggle-btn:hover span:nth-child(2) {
-        transform: rotate(45deg);
-        transition-delay: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-        transition: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(4) {
-        transform: translateY(10px);
-    }
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 2500px) {
-    #sidebar.active {
-        position: absolute;
-        top: 40%;
-        width: 50%;
-        height: 10%;
-    }
 
-    #sidebar.active .toggle-btn{
-        position: relative;
-        top: 30%;
-        transform: translateX(450px);
-    }
-
-    .toggle-btn {
-        position: absolute;
-        top: 10px;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    .toggle-btn:hover span:nth-child(1) {
-        transform: translateY(-15px);
-    }
-
-    .toggle-btn:hover span:nth-child(2) {
-        transform: rotate(45deg);
-        transition-delay: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-        transition: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(4) {
-        transform: translateY(10px);
-    }
 }
 
 @media only screen and (min-width: 2501px) and (max-width: 5000px) {
-    #sidebar.active .toggle-btn {
-        transform: translateX(5%);
-    }
 
-    #sidebar.active {
-        position: absolute;
-        top: 40%;
-        width: 50%;
-        height: 10%;
-    }
-
-    .toggle-btn {
-        position: absolute;
-        top: 10px;
-    }
-
-    .toggle-btn:hover span:nth-child(2) {
-        transform: rotate(45deg);
-        transition-delay: .2s;
-    }
-
-    .toggle-btn:hover span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-        transition: .2s;
-    }
 }
 
 
 
+/* Problems */
+/* 1. hide menu and show when clicked */
+/* 2. Make sure menu opens in same area horizontally when clicked */
+/* 3. How to only have X when closing out menu instead of when opening it too */
+/* 4. Do about section  */
+/* 5. List projects below that */
+/* 6. Add contact section */
 
 
-/* Why is menu still clickable */
-
-/* How to close X when you cancel slide out menu */
-
-
-/* Maybe only have hamburger menu for mobile and regular menu for desktop */
 
 
 
-/* To move the toggle button when I slide out the menu, use "transform: translateX();" */
+
