@@ -25,6 +25,7 @@ a {
     text-decoration: none;
     color: white;
     justify-content: space-around;
+    visibility: hidden;
 }
 
 a:hover {
@@ -44,6 +45,7 @@ a:hover {
 
 #sidebar.active {
     left: 0;
+    visibility: visible;
 }
 
 .hero-image {
