@@ -23,14 +23,10 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
-    justify-content: space-around;
-    visibility: hidden;
+    color: #000;
 }
 
-a.active {
-    visibility: visible;
-}
+
 
 a:hover {
     font-weight: bold;
@@ -43,8 +39,70 @@ a:hover {
     width: 100%;
 }
 
-.hero-text {
-    
+.header {
+    background-color: white;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+}
+
+.header ul a:hover {
+    background-color: #ddd;
+}
+
+.header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    position: relative;
+    padding: 28px 20px;
+    float: right;
+}
+
+.nav-icon {
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: .2s ease-out;
+    background-color: black;
+}
+
+.nav-icon:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .2s ease-out;
+    background-color: black;
+}
+
+.nav-icon:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .2s ease-out;
+    background-color: black;
 }
 
 
