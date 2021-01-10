@@ -20,10 +20,6 @@ li {
     padding: 20px 20px;
 }
 
-nav {
-    left: 0;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -46,6 +42,19 @@ a:hover {
 }
 
 #sidebar.active {
+    left: 0;
+}
+
+.hero-image {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.hero-text {
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
 
 .toggle-btn {
@@ -158,26 +167,31 @@ a:hover {
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 2500px) {
-    #sidebar.active .toggle-btn {
-        transform: translateX(400px);
-    }
-
     #sidebar.active {
+        position: absolute;
+        top: 40%;
         width: 50%;
         height: 10%;
     }
 
+    #sidebar.active .toggle-btn{
+        position: relative;
+        top: 30%;
+        transform: translateX(450px);
+    }
+
     .toggle-btn {
         position: absolute;
-        left: 400px;
+        top: 40%;
     }
 
     ul {
         display: flex;
+        left: 600px;
     }
 
     .toggle-btn:hover span:nth-child(1) {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 
     .toggle-btn:hover span:nth-child(2) {
@@ -194,7 +208,6 @@ a:hover {
         transform: translateY(10px);
     }
 }
-
 
 
 @media only screen and (min-width: 2501px) and (max-width: 5000px) {
@@ -227,6 +240,8 @@ a:hover {
         transition: .2s;
     }
 }
+
+
 
 
 
