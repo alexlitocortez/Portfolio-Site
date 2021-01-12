@@ -108,17 +108,9 @@ a:hover {
     background-color: black;
 }
 
-.header .menu-btn {
-    float: right;
-    position: relative;
-    top: 25px;
-    right: 40px;
-}
 
-.header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-}
 
+/* Display li/A links */
 
 
 
