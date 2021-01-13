@@ -32,17 +32,22 @@ a:hover {
     transition: .4s ease-in-out;
 }
 
+#menu {
+    display: block;
+}
+
 .hero-image {
     max-height: 30%;
     width: 100%;
 }
 
 .header {
-    background-color: white;
+    background: linear-gradient(45deg, orange, lightblue, yellow transparent);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 999;
+    height: 50px;
 }
 
 .header ul {
@@ -62,14 +67,60 @@ a:hover {
 }
 
 .header .menu {
-    max-height: 0px;
+    max-height: 500px;
     transition: max-height .2s ease-out;
+    display: block;
     width: 100%;
+}
+
+#menu-two {
+    visibility: hidden;
+}
+
+#menu-two.active {
+    visibility: visible;
+}
+
+#toggle-btn .foo:nth-of-type(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+#toggle-btn .foo:nth-of-type(2) {
+    transform: translateX(500px);
+    transition: .6s;
+}
+
+#toggle-btn .foo:nth-of-type(3) {
+    transform: rotate(-45deg) translateY(-17px) translateX(1px);
 }
 
 .header .menu-icon {
     position: relative;
     padding: 28px 20px;
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    right: 55px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position: relative;
+    top: 10px;
+    margin-top: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .4s;
 }
 
 .nav-icon {
@@ -108,15 +159,43 @@ a:hover {
     background-color: black;
 }
 
+.about-me {
+    position: relative;
+    top: 500px;
+    width: 100%;
+    height: 300px;
+}
 
+#about-me {
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: grey;
+}
 
-/* Display li/A links */
+.column {
+    float: left;
+    width: 33.33%;
+}
 
+.line {
+    height: 4px;
+    width: 70px;
+    background-color: #444649;
+    position: relative;
+    left: 685px;
+    margin-top: 25px;
+}
 
+.html {
+    width: 300px;
+    height: 300px;
+}
 
-
-/* Move label overr */
-
+.css {
+    width: 300px;
+    height: 300px;
+}
 
 /* Media Queries */
 
