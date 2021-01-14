@@ -7,9 +7,9 @@
     </head>
     <header class="header">
         <div class="toggle-btn" id="toggle-btn">
-            <span class="line top" id="line top"></span>
-            <span class="line middle" id="line middle"></span>
-            <span class="line bottom" id="line bottom"></span>
+            <span class="line top" id="line-top"></span>
+            <span class="line middle" id="line-middle"></span>
+            <span class="line bottom" id="line-bottom"></span>
         </div>
             <ul class="menu" id="menu-two">
                 <li><a href="Home">Home</a></li>
@@ -19,25 +19,55 @@
                 <li><a href="Contact">Contact</a></li>
             </ul>
     </header>
-        <body>
-            <div class="hero-image">
-                <div class="hero-text">
-                </div>
+    <body>
+        <div class="hero-image">
+            <div class="hero-text">
             </div>
-            <div class="about-me">
-                <h1 id="about-me">About
-                    <div class="line"></div>
-                </h1>
+        </div>
+        <div class="about-me">
+            <h1 id="about-me">About
+                <div class="divider"></div>
+            </h1>
+            <div class="columns">
                 <div class="column">
                     <img class="html" src="html 5.png" alt="html logo">
                 </div>
                 <div class="column">
                     <img class="css" src="css.png" alt="css logo">
                 </div>
-                <div class="column">
-                    <img src="javascript.png" alt="javascript logo">
-                </div>
+        </div>
+        <div class="javascript">
+            <div class="column">
+                <img class="javascript" src="javascript.png" alt="javascript logo">
             </div>
-        <script src="interactive.js"></script>
-        </body>
+        </div>
+        <div class="picture">
+
+        </div>
+        <div class="projects">
+            <h1 id="projects">Projects
+
+            </h1>
+        </div>
+        <div class="blog" data-animation="slide-in-left" data-delay=".5s">
+            <h1 id="blog">Blog
+                <div class="divider-two"></div>
+            </h1>
+        </div>
+        <div class="contact">
+            <h1 id="contact">Contact
+                <div class="divider-three"></div>
+            </h1>
+            <p class="contact-me">Let's work together</p>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <input type="text" id="message" name="message" placeholder="Message">
+            </form>
+        </div>
+    <script src="interactive.js"></script>
+    </body>
 </html>
+
+
+
