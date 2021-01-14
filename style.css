@@ -32,6 +32,11 @@ a:hover {
     transition: .4s ease-in-out;
 }
 
+input {
+    height: 20px;
+    outline: none;
+}
+
 #menu {
     display: block;
 }
@@ -42,13 +47,16 @@ a:hover {
 }
 
 .header {
-    background: linear-gradient(45deg, orange, lightblue, yellow transparent);
+    background: linear-gradient(0.25turn, orange, yellow, lightblue);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 999;
     height: 50px;
 }
+
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
 
 .header ul {
     margin: 0;
@@ -114,7 +122,7 @@ a:hover {
 .toggle-btn span {
     width: 45px;
     height: 4px;
-    background-color: black;
+    background: black;
     display: block;
     position: relative;
     top: 10px;
@@ -123,40 +131,16 @@ a:hover {
     transition: .4s;
 }
 
-.nav-icon {
-    display: block;
-    margin: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    height: 2px;
-    width: 25px;
-    position: relative;
-    float: right;
-    transition: .2s ease-out;
-    background-color: black;
-    cursor: pointer;
+.toggle-btn span:hover:nth-child(1) {
+    transform: translateY(-5px);
 }
 
-.nav-icon:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    transition: all .2s ease-out;
-    background-color: black;
+.toggle-btn span:hover:nth-child(2) {
+    transform: translateX(5px);
 }
 
-.nav-icon:after {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 20px;
-    transition: all .2s ease-out;
-    background-color: black;
+.toggle-btn span:hover:nth-child(3) {
+    transform: translateY(5px);
 }
 
 .about-me {
@@ -175,10 +159,10 @@ a:hover {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 50%;
 }
 
-.line {
+.divider {
     height: 4px;
     width: 70px;
     background-color: #444649;
@@ -187,15 +171,105 @@ a:hover {
     margin-top: 25px;
 }
 
+.columns {
+    margin-top: 75px;
+}
+
 .html {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .css {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.javascript {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects {
+    position: relative;
+    top: 700px;
+    width: 100%;
+    height: 300px;
+    background: lightgray;
+}
+
+#projects {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+    left: -90px;
+}
+
+.blog {
+    position: relative;
+    top: 750px;
+    width: 300px;
+    animation-delay: .5s;
+}
+
+#blog {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: grey;
+    position: relative;
+    left: 670px;
+}
+
+.divider-two {
+    height: 4px;
+    width: 70px;
+    background-color: #444649;
+    position: relative;
+    left: 10px;
+    margin-top: 25px;
+}
+
+.contact {
+    background: #252934;
+    position: relative;
+    top: 900px;
+    height: 600px;
+}
+
+#contact {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    top: 30px;
+}
+
+.divider-three {
+    height: 4px;
+    width: 70px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.contact-me {
+    color: white;
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
 
 /* Media Queries */
 
@@ -219,11 +293,10 @@ a:hover {
 
 
 /* Problems */
-/* 1. hide menu and show when clicked */
-/* 2. Make sure menu opens in same area horizontally when clicked */
-/* 3. How to only have X when closing out menu instead of when opening it too */
-/* 4. Do about section  */
+
+/* 4. Add picture in about section with paragraphs explaining yourself  */
 /* 5. List projects below that */
+/* 6. List blogs below that */
 /* 6. Add contact section */
 
 
