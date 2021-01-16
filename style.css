@@ -49,6 +49,7 @@ input {
     box-sizing: border-box;
     padding: 10px 15px;
     margin-bottom: 10px;
+    color: white;
 }
 
 input::placeholder {
@@ -57,7 +58,13 @@ input::placeholder {
 }
 
 input:nth-last-child(1) {
-    height: 300px;
+    padding: 15px 0px 300px 15px;
+}
+
+input[name="message"]::placeholder {
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 footer {
@@ -79,16 +86,13 @@ footer {
 }
 
 .header {
-    background: linear-gradient(0.25turn, orange, yellow, lightblue);
+    background: linear-gradient(0.25turn, black, navy, lightblue);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 999;
     height: 50px;
 }
-
-background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-
 
 .header ul {
     margin: 0;
@@ -236,13 +240,13 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     top: 700px;
     width: 100%;
     height: 300px;
-    background: lightgray;
+    background-color: #252934;
 }
 
 #projects {
     font-size: 32px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     position: relative;
     left: -90px;
 }
@@ -275,7 +279,8 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     background: #252934;
     position: relative;
     top: 900px;
-    height: 800px;
+    height: 1000px;
+    width: 100%;
 }
 
 #contact {
@@ -300,6 +305,8 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     position: relative;
     top: 150px;
     text-align: center;
+    text-transform: uppercase;
+    color: #4caf50;
 }
 
 .submit {
@@ -331,9 +338,33 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     transform: translateY(4px);
 }
 
+.social-container {
+    display: flex;
+    position: relative;
+    top: 1000px;
+}
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+    position: relative;
+    top: -70px;
+    left: 670px;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
+}
 
-
+.fa-linkedin {
+    color: white;
+}
+  
+.fa-twitter {
+    color: white;
+    margin-left: 5px;
+  }
 
 /* Media Queries */
 
@@ -362,9 +393,9 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 /* 4. Add picture in about section with paragraphs explaining yourself  */
 /* 5. List projects below that */
 /* 6. List blogs below that */
-/* 6. Add blinking cursor in input fields */
 /* 8. Add footer social media */
 /* 9. How to change menu color so it's readable when I'm on a different part of the page */
+/* 10. Fix horizontal scrolling issue */
 
 
 
