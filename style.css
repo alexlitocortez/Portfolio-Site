@@ -32,9 +32,41 @@ a:hover {
     transition: .4s ease-in-out;
 }
 
+form {
+    position: relative;
+    top: 150px;
+    left: 350px;
+    margin-top: 30px;
+}
+
 input {
-    height: 20px;
+    height: 50px;
+    width: 50%;
+    font-size: 12pt;
     outline: none;
+    background: #1e242c;
+    border: 0;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+input:nth-last-child(1) {
+    height: 300px;
+}
+
+footer {
+    position: relative;
+    top: 900px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 30px;
 }
 
 #menu {
@@ -243,7 +275,7 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     background: #252934;
     position: relative;
     top: 900px;
-    height: 600px;
+    height: 800px;
 }
 
 #contact {
@@ -270,6 +302,38 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     text-align: center;
 }
 
+.submit {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 670px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #252934;
+    color: green;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 3px solid green;
+    outline: none;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: #4caf50;
+    color: white;
+}
+
+.submit:active {
+    transform: translateY(4px);
+}
+
+
+
+
 
 /* Media Queries */
 
@@ -292,12 +356,15 @@ background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 
 
 
+
 /* Problems */
 
 /* 4. Add picture in about section with paragraphs explaining yourself  */
 /* 5. List projects below that */
 /* 6. List blogs below that */
-/* 6. Add contact section */
+/* 6. Add blinking cursor in input fields */
+/* 8. Add footer social media */
+/* 9. How to change menu color so it's readable when I'm on a different part of the page */
 
 
 
