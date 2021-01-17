@@ -347,10 +347,10 @@ footer {
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 60px;
     text-align: center;
     text-decoration: none;
-    border-radius: 70%;
+    border-radius: 75%;
     position: relative;
     top: -70px;
     left: 670px;
@@ -365,6 +365,21 @@ footer {
     color: white;
     margin-left: 5px;
   }
+
+a {
+    display: inline-block;
+}
+
+a:hover::before {
+    -webkit-background-clip: text;
+    transition: all 265ms ease-in;
+    color: #00b5f5;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
+}
+
+
+
+
 
 /* Media Queries */
 
