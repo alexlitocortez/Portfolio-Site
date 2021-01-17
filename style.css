@@ -355,6 +355,7 @@ footer {
     top: -70px;
     left: 670px;
     background: linear-gradient(45deg, #00b5f5, #002a8f);
+    display: inline-block;
 }
 
 .fa-linkedin {
@@ -366,18 +367,21 @@ footer {
     margin-left: 5px;
   }
 
-a {
+.fa:hover {
+    transform: scale(0);
+    transition: all 2s ease-in-out;
+}
+
+.social-icons a {
     display: inline-block;
 }
 
-a:hover::before {
+.social-icons:hover i {
     -webkit-background-clip: text;
-    transition: all 265ms ease-in;
-    color: #00b5f5;
-    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-text-fill-color: #002a8f;
+    opacity: 1;
+    transform: scale(2);
 }
-
-
 
 
 
