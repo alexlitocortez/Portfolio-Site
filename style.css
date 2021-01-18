@@ -1,4 +1,8 @@
 
+:root {
+    --money: linear-gradient(45deg, #00b5f5, #002a8f )
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -378,12 +382,20 @@ footer {
 
 .social-icons:hover i {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #002a8f;
-    opacity: 1;
+    -webkit-tezt-fill-color: transparent;
     transform: scale(2);
+    transition: all 265ms ease-in;
+    background: linear-gradient(45deg, #00b5f5, #002a8f);
 }
 
 
+
+@include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
 
 /* Media Queries */
 
