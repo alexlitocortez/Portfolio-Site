@@ -74,7 +74,7 @@ input[name="message"]::placeholder {
 footer {
     position: relative;
     top: 900px;
-    height: 100px;
+    height: 500px;
     text-align: center;
     text-transform: uppercase;
     padding: 30px 30px;
@@ -343,9 +343,13 @@ footer {
 }
 
 .social-container {
-    display: flex;
+    width: 100%;
+    margin: 40vh auto;
+    text-align: center;
     position: relative;
-    top: 1000px;
+    top: 200px;
+    left: 600px;
+    display: flex;
 }
 
 .fa {
@@ -362,40 +366,50 @@ footer {
     display: inline-block;
 }
 
-.fa-linkedin {
-    color: white;
-}
-  
-.fa-twitter {
-    color: white;
-    margin-left: 5px;
-  }
-
-.fa:hover {
-    transform: scale(0);
-    transition: all 2s ease-in-out;
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
 }
 
 .social-icons a {
     display: inline-block;
 }
 
-.social-icons:hover i {
-    -webkit-background-clip: text;
-    -webkit-tezt-fill-color: transparent;
-    transform: scale(2);
-    transition: all 265ms ease-in;
+.social-icons a::before {
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
     background: linear-gradient(45deg, #00b5f5, #002a8f);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out
+}
+
+.social-icons:hover i {
+    color: #00b5f5;
+    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
 }
 
 
 
-@include transformScale(2.2);
-            color: $iconColor;
-            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
 
 /* Media Queries */
 
