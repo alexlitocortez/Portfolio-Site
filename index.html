@@ -5,6 +5,7 @@
         <title>Portfolio Site</title>
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <header class="header">
         <div class="toggle-btn" id="toggle-btn">
@@ -36,6 +37,7 @@
                 <div class="column">
                     <img class="css" src="css.png" alt="css logo">
                 </div>
+            </div>
         </div>
         <div class="javascript">
             <div class="column">
@@ -45,7 +47,7 @@
         <div class="picture">
 
         </div>
-        <div class="projects">
+        <div class="projects aos-animate">
             <h1 id="projects">Projects
 
             </h1>
@@ -55,7 +57,7 @@
                 <div class="divider-two"></div>
             </h1>
         </div>
-        <div class="contact">
+        <div data-aos="fade-right" class="contact">
             <h1 id="contact">Contact
                 <div class="divider-three"></div>
             </h1>
@@ -72,15 +74,19 @@
         <footer>
             Alex Cortez ©2021
         </footer>
-        <div class="social-container">
+        <div data-aos="fade-left" class="social-container">
             <div class="social-icons">
-                <li><a href="#"><i class="fa fa-linkedin" id="fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" id="fa"></i></a></li>
             </div>
             <div class="social-icons">
-                <li><a href="#"><i class="fa fa-twitter" id="fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" id="fa"></i></a></li>
             </div>
         </div>
     <script src="interactive.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(); 
+    </script>
     </body>
 </html>
 
