@@ -578,9 +578,10 @@ footer {
     }
 
     .header {
-        background: none;
-        overflow: hidden;
-        width: 100%;
+        background: lightblue;
+        width: 100vw;
+        z-index: 999;
+        left: 10%;
     }
 
     .toggle-btn {
@@ -588,7 +589,13 @@ footer {
         width: 100%;
         margin: auto;
         position: relative;
-        left: 115px;
+        left: 10%;
+    }
+
+    .menu.active {
+        width: 100%;
+        position: relative;
+        left: 10%;
     }
 
     .about-me {
@@ -631,7 +638,7 @@ footer {
 
     .divider-two {
         position: relative;
-        left: 220px;
+        left: 47%;
     }
 
     .blog {
@@ -669,8 +676,8 @@ footer {
 
     .submit {
         position: relative;
-        left: 185px;
-        display: block;
+        left: 47%;
+        justify-content: center;
     }
 
     footer {
@@ -679,7 +686,8 @@ footer {
     }
 
     .social-container {
-        left: 240px;
+        position: relative;
+        left: 50%;
     }
 }
 
