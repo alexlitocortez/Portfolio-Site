@@ -578,7 +578,7 @@ footer {
     }
 
     .header {
-        background: lightblue;
+        background: white;
         width: 100vw;
         z-index: 999;
         left: 10%;
@@ -693,7 +693,129 @@ footer {
 
 
 @media only screen and (min-width: 1401px) and (max-width: 2500px) {
+    html {
+        scroll-behavior: smooth;
+    }
 
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background: white;
+        width: 100%;
+        z-index: 999;
+        left: 10%;
+    }
+
+    .toggle-btn {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        left: 10%;
+    }
+
+    .menu.active {
+        width: 100%;
+        position: relative;
+        left: 10%;
+    }
+
+    .about-me {
+        width: 50%;
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 100px;
+    }
+
+    .css {
+        width: 75px;
+    }
+
+    .divider {
+        position: relative;
+        left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .javascript {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 230px;
+        left: 50px;
+    }
+
+    .projects {
+        width: 100vw;
+        position: relative;
+        left: 100px;
+        background-color: #252934;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    .divider-two {
+        position: relative;
+        left: 47%;
+        width: 110px;
+    }
+
+    .blog {
+        width: 100vw;
+        position: relative;
+        left: 100px;
+    }
+
+    #blog {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    .divider-three {
+        display: block;
+        margin: auto;
+        width: 70px;
+        position: relative;
+        left: -3px;
+        margin-top: 25px;
+    }
+
+    .contact {
+        position: relative;
+        left: 100px;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .submit {
+        position: relative;
+        left: 47%;
+        justify-content: center;
+    }
+
+    footer {
+        position: relative;
+        left: 100px;
+    }
+
+    .social-container {
+        position: relative;
+        left: 50%;
+    }
 }
 
 @media only screen and (min-width: 2501px) and (max-width: 5000px) {
@@ -708,14 +830,11 @@ footer {
 /* 4. Add picture in about section with paragraphs explaining yourself  */
 /* 5. List projects below that */
 /* 6. List blogs below that */
-/* 12. Give media queries */
 /* 13. Add social links to the icons */
-
-
-/* Media query problems */
-
-/* 4. Align elements */
+/* 14. Add media queries */
 
 
 
-/* Fix width of header to always keep the toggle btn in the right place */
+
+
+
