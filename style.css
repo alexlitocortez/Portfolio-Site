@@ -707,7 +707,7 @@ footer {
         background: white;
         width: 100%;
         z-index: 999;
-        left: 10%;
+        left: 0;
     }
 
     .toggle-btn {
@@ -715,21 +715,17 @@ footer {
         width: 100%;
         margin: auto;
         position: relative;
-        left: 10%;
+        left: 2%;
     }
 
     .menu.active {
         width: 100%;
-        position: relative;
-        left: 10%;
     }
 
     .about-me {
         width: 50%;
         display: block;
         margin: auto;
-        position: relative;
-        left: 100px;
     }
 
     .css {
@@ -748,13 +744,11 @@ footer {
         margin: auto;
         position: relative;
         top: 230px;
-        left: 50px;
     }
 
     .projects {
         width: 100vw;
         position: relative;
-        left: 100px;
         background-color: #252934;
     }
 
@@ -771,7 +765,6 @@ footer {
     .blog {
         width: 100vw;
         position: relative;
-        left: 100px;
     }
 
     #blog {
@@ -789,32 +782,11 @@ footer {
         margin-top: 25px;
     }
 
-    .contact {
-        position: relative;
-        left: 100px;
-    }
-
     form {
         position: relative;
         left: 0;
         display: block;
         text-align: center;
-    }
-
-    .submit {
-        position: relative;
-        left: 47%;
-        justify-content: center;
-    }
-
-    footer {
-        position: relative;
-        left: 100px;
-    }
-
-    .social-container {
-        position: relative;
-        left: 50%;
     }
 }
 
