@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     </head>
     <header class="header">
         <div class="toggle-btn" id="toggle-btn">
@@ -30,36 +31,34 @@
             <h1 id="about-me">About
                 <div class="divider"></div>
             </h1>
-            <div class="columns">
-                <div class="column">
-                    <img class="html" src="html 5.png" alt="html logo">
-                </div>
-                <div class="column">
-                    <img class="css" src="css.png" alt="css logo">
-                </div>
-            </div>
-        </div>
-        <div class="javascript">
-            <div class="column">
-                <img class="javascript" src="javascript.png" alt="javascript logo">
-            </div>
         </div>
         <div class="picture">
-
+            <img class="profile" src="profile pic.jpg" alt="profile pic">
+            <p class="profile-paragraph">
+                My name is Alex. I'm a front-end developer who has experience
+                <br>in marketing. I got into coding because it incorporates<br>
+                problem-solving, creativity, and more.
+            </p>
         </div>
-        <div class="projects aos-animate">
+        <div data-aos="fade-left" class="skills">
+            <h1 id="skills">skills</h1>
+            <div class="coding-skills">
+                <img id="html" src="html 5.png" alt="html">
+                <img id="css" src="css.png" alt="css">
+                <img id="javascript" src="javascript.png" alt="javascript">
+            </div>
+        </div>
+        <div data-aos="fade-right" class="projects">
             <h1 id="projects">Projects
-
             </h1>
         </div>
-        <div class="blog" data-animation="slide-in-left" data-delay=".5s">
+        <div class="blog">
             <h1 id="blog">Blog
-                <div class="divider-two"></div>
             </h1>
         </div>
         <div data-aos="fade-right" class="contact">
             <h1 id="contact">Contact
-                <div class="divider-three"></div>
+                <div class="divider-four"></div>
             </h1>
             <p class="contact-me">Let's work together</p>
             <form>
@@ -72,9 +71,9 @@
             </button>
         </div>
         <footer>
-            Alex Cortez ©2021
+            <p class="footer">Alex Cortez<p class="twenty-one">©2021</p></p>
         </footer>
-        <div data-aos="fade-left" class="social-container">
+        <div class="social-container">
             <div class="social-icons">
                 <li><a href="#"><i class="fa fa-linkedin" id="fa"></i></a></li>
             </div>
@@ -83,7 +82,6 @@
             </div>
         </div>
     <script src="interactive.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init(); 
     </script>
