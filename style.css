@@ -91,7 +91,7 @@ footer {
 }
 
 .header {
-    background: linear-gradient(0.25turn, black, navy, lightblue);
+    background-color: white;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
@@ -217,49 +217,75 @@ footer {
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
-    color: grey;
+    color: black;
+}
+
+.picture {
+    position: relative;
+    width: 100vw;
+    display: block;
+    margin: auto;
+    top: 250px;
+    left: 33%;
+}
+
+.profile {
+    width: 35%;
+    height: 500px;
+    overflow: hidden;
+    transform-origin: 0 100%;
+    border-radius: 50%;
+}
+
+.profile-paragraph {
+    margin-top: 3%;
+    color: #616161;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    right: 33%;
+}
+
+.skills {
+    position: relative;
+    top: 300px;
+    left: 47%;
+}
+
+#skills {
+    text-transform: uppercase;
+}
+
+.coding-skills {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    right: 10px;
+}
+
+#html {
+    width: 140px;
+}
+
+#css {
+    width: 100px;
+    position: relative;
+    left: 20px;
+    margin-top: 30px;
+}
+
+#javascript {
+    width: 100px;
+    position: relative;
+    left: 20px;
+    margin-top: 30px;
 }
 
 .column {
     float: left;
     width: 50%;
-}
-
-.divider {
-    height: 4px;
-    width: 70px;
-    background-color: #444649;
-    position: relative;
-    left: 685px;
-    margin-top: 25px;
-}
-
-.columns {
-    margin-top: 75px;
-}
-
-.html {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.css {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.javascript {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .projects {
@@ -278,18 +304,9 @@ footer {
     text-align: center;
 }
 
-.divider-two {
-    height: 4px;
-    width: 70px;
-    background-color: white;
-    position: relative;
-    left: 690px;
-    margin-top: 25px;
-}
-
-
 .blog {
     position: relative;
+    left: 570px;
     top: 750px;
     width: 300px;
     animation-delay: .5s;
@@ -298,18 +315,9 @@ footer {
 #blog {
     font-size: 32px;
     text-transform: uppercase;
-    color: grey;
-    position: relative;
+    text-align: center;
+    color: black;
     left: 670px;
-}
-
-.divider-three {
-    height: 4px;
-    width: 70px;
-    background-color:  #444649;
-    position: relative;
-    left: 10px;
-    margin-top: 25px;
 }
 
 .contact {
@@ -376,12 +384,10 @@ footer {
 }
 
 .social-container {
-    width: 50%;
-    text-align: center;
     position: relative;
     top: 800px;
-    left: 615px;
     display: flex;
+    align-items: center;
 }
 
 .fa {
@@ -441,12 +447,24 @@ footer {
     transform: scale(2.2);
 }
 
+.footer {
+    font-size: 24px;
+    background-image: linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
 
-
+.twenty-one {
+    font-size: 24px;
+    background-image: linear-gradient(45deg, #00b5f5, #002a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) 
+and (orientation: portrait) {
     html {
         scroll-behavior: smooth;
     }
@@ -457,90 +475,59 @@ footer {
         padding: 0;
     }
 
-    .header {
-        background: white;
-        z-index: 999;
-    }
-
     .menu {
         width: 50%;
     }
 
     .toggle-btn {
-        position: relative;
         display: block;
         width: 100%;
-        margin-right: auto;
-        left: 115px;
+        left: 150px;
+    }
+
+    .menu.active {
+        position: relative;
+        left: 40%;
     }
 
     .about-me {
-        width: 50%;
-        display: block;
+        width: 100vw;
         margin: auto;
-        position: relative;
-        left: 100px;
-    }
-
-    .css {
-        width: 75px;
-    }
-
-    .divider {
-        position: relative;
-        left: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .javascript {
         display: block;
-        margin: auto;
-        position: relative;
-        top: 230px;
-        left: 50px;
+        left: 50%;
+    }
+
+    .picture {
+        display: block;
+        left: 75%;
+    }
+    
+    .skills {
+        display: block;
+        left: 90%;
     }
 
     .projects {
         width: 100vw;
-        position: relative;
-        left: 100px;
+        margin: auto;
+        display: block;
+        left: 50%;
         background-color: #252934;
-    }
-
-    #projects {
-        text-align: center;
-    }
-
-    .divider-two {
-        position: relative;
-        left: 220px;
     }
 
     .blog {
         width: 100vw;
         position: relative;
-        left: 100px;
-    }
-
-    #blog {
-        position: relative;
-        left: 0;
-        text-align: center;
-    }
-
-    .divider-three {
+        left: 50%;
         display: block;
         margin: auto;
-        width: 70px;
-        position: relative;
-        left: -3px;
-        margin-top: 25px;
     }
 
     .contact {
-        position: relative;
-        left: 100px;
+        width: 100vw;
+        margin: auto;
+        display: block;
+        left: 50%;
     }
 
     form {
@@ -557,14 +544,19 @@ footer {
     }
 
     footer {
-        position: relative;
-        left: 100px;
+        display: block;
+        width: 100vw;
+        left: 50%;
+        margin: auto;
     }
 
     .social-container {
-        left: 240px;
+        position: relative;
+        display: flex;
+        width: 100vw;
+        margin: auto;
+        left: 50%;
     }
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1400px) {
     html {
@@ -579,9 +571,9 @@ footer {
 
     .header {
         background: white;
-        width: 100vw;
+        width: 100%;
         z-index: 999;
-        left: 10%;
+        left: 0;
     }
 
     .toggle-btn {
@@ -599,67 +591,26 @@ footer {
     }
 
     .about-me {
-        width: 50%;
-        display: block;
-        margin: auto;
+        width: 100vw;
         position: relative;
         left: 100px;
-    }
-
-    .css {
-        width: 75px;
-    }
-
-    .divider {
-        position: relative;
-        left: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .javascript {
-        display: block;
-        margin: auto;
-        position: relative;
-        top: 230px;
-        left: 50px;
     }
 
     .projects {
         width: 100vw;
         position: relative;
-        left: 100px;
         background-color: #252934;
-    }
-
-    #projects {
-        text-align: center;
-    }
-
-    .divider-two {
-        position: relative;
-        left: 47%;
     }
 
     .blog {
         width: 100vw;
         position: relative;
+        display: block;
         left: 100px;
     }
 
     #blog {
-        position: relative;
-        left: 0;
         text-align: center;
-    }
-
-    .divider-three {
-        display: block;
-        margin: auto;
-        width: 70px;
-        position: relative;
-        left: -3px;
-        margin-top: 25px;
     }
 
     .contact {
@@ -728,24 +679,6 @@ footer {
         margin: auto;
     }
 
-    .css {
-        width: 75px;
-    }
-
-    .divider {
-        position: relative;
-        left: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .javascript {
-        display: block;
-        margin: auto;
-        position: relative;
-        top: 230px;
-    }
-
     .projects {
         width: 100vw;
         position: relative;
@@ -754,12 +687,6 @@ footer {
 
     #projects {
         text-align: center;
-    }
-
-    .divider-two {
-        position: relative;
-        left: 47%;
-        width: 110px;
     }
 
     .blog {
@@ -773,15 +700,6 @@ footer {
         text-align: center;
     }
 
-    .divider-three {
-        display: block;
-        margin: auto;
-        width: 70px;
-        position: relative;
-        left: -3px;
-        margin-top: 25px;
-    }
-
     form {
         position: relative;
         left: 0;
@@ -791,7 +709,78 @@ footer {
 }
 
 @media only screen and (min-width: 2501px) and (max-width: 5000px) {
+    html {
+        scroll-behavior: smooth;
+    }
 
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background: white;
+        height: 200px;
+        width: 100%;
+        z-index: 999;
+        left: 0;
+    }
+
+    .toggle-btn {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        left: 2%;
+    }
+
+    .menu.active {
+        width: 100%;
+    }
+
+    .about-me {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .html {
+        width: 35%;
+        height: 280px;
+    }
+
+    .projects {
+        width: 100vw;
+        position: relative;
+        background-color: #252934;
+    }
+
+    #projects {
+        text-align: center;
+    }
+
+    .blog {
+        width: 100vw;
+        position: relative;
+    }
+
+    #blog {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .social-container {
+        align-items: center;
+    }
 }
 
 
