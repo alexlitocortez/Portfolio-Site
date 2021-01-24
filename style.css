@@ -255,6 +255,9 @@ footer {
 
 #skills {
     text-transform: uppercase;
+    position: relative;
+    top: 300px;
+    left: 47%;
 }
 
 .coding-skills {
@@ -463,8 +466,7 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (max-width: 768px) 
-and (orientation: portrait) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
     html {
         scroll-behavior: smooth;
     }
@@ -475,51 +477,60 @@ and (orientation: portrait) {
         padding: 0;
     }
 
+    .header {
+        max-width: 768px;
+        width: 100%;
+    }
+
     .menu {
-        width: 50%;
+        width: 100%;
     }
 
     .toggle-btn {
         display: block;
         width: 100%;
-        left: 150px;
+        left: 2%;
     }
 
-    .menu.active {
+    .toggle-btn.menu.active span:nth-last-child(2) {
+        transform: translateY();
+    }
+
+    .profile {
+        width: 400px;
+        display: block;
         position: relative;
-        left: 40%;
+        right: 70px;
     }
 
-    .about-me {
-        width: 100vw;
-        margin: auto;
-        display: block;
-        left: 50%;
+    #skills {
+        text-align: center;
+        position: relative;
+        top: 360px;
+        left: 0;
+        margin-top: 5px;
     }
 
-    .picture {
-        display: block;
-        left: 75%;
-    }
-    
-    .skills {
-        display: block;
-        left: 90%;
+    .coding-skills {
+        width: 300px;
+        margin: 0px;
+        position: relative;
+        right: 50px;
+        box-sizing: border-box;
     }
 
     .projects {
         width: 100vw;
         margin: auto;
         display: block;
-        left: 50%;
         background-color: #252934;
     }
 
     .blog {
         width: 100vw;
         position: relative;
-        left: 50%;
         display: block;
+        left: 0;
         margin: auto;
     }
 
@@ -527,7 +538,6 @@ and (orientation: portrait) {
         width: 100vw;
         margin: auto;
         display: block;
-        left: 50%;
     }
 
     form {
@@ -546,7 +556,6 @@ and (orientation: portrait) {
     footer {
         display: block;
         width: 100vw;
-        left: 50%;
         margin: auto;
     }
 
@@ -555,7 +564,7 @@ and (orientation: portrait) {
         display: flex;
         width: 100vw;
         margin: auto;
-        left: 50%;
+        left: 0;
     }
 
 @media only screen and (min-width: 769px) and (max-width: 1400px) {
@@ -573,12 +582,9 @@ and (orientation: portrait) {
         background: white;
         width: 100%;
         z-index: 999;
-        left: 0;
     }
 
     .toggle-btn {
-        display: block;
-        width: 100%;
         margin: auto;
         position: relative;
         left: 10%;
@@ -587,7 +593,7 @@ and (orientation: portrait) {
     .menu.active {
         width: 100%;
         position: relative;
-        left: 10%;
+        left: 5%;
     }
 
     .about-me {
@@ -613,16 +619,9 @@ and (orientation: portrait) {
         text-align: center;
     }
 
-    .contact {
-        position: relative;
-        left: 100px;
-    }
-
     form {
         position: relative;
-        left: 0;
         display: block;
-        text-align: center;
     }
 
     .submit {
