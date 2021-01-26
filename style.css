@@ -295,7 +295,7 @@ footer {
     position: relative;
     top: 700px;
     width: 100vw;
-    height: 300px;
+    height: 500px;
     background-color: #252934;
 }
 
@@ -305,6 +305,7 @@ footer {
     color: white;
     display: block;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .blog {
@@ -323,31 +324,79 @@ footer {
     left: 670px;
 }
 
+.project-posts {
+    width: 150em;
+    display: flex;
+}
+
+.column-projects {
+    width: 300px;
+    height: 20em;
+    margin-left: 10%;
+    background-color: white;
+    position: relative;
+    left: 3rem;
+    cursor: pointer;
+}
+
+.column-projects:hover {
+    opacity: 0.6;
+}
+
 .posts {
-    float: left;
-    height: auto;
-    width: 1000px;
+    width: 100em;
     height: 400px;
     display: flex;
     position: relative;
-    top: 25px;
-    right: 25rem;
-    justify-content: center;
+    top: 10rem;
+    right: 39rem;
 }
 
 .column-posts {
     width: 33.33%;
-    width: 100px;
+    width: 300px;
     margin-left: 10%;
     text-align: center;
-    box-shadow: 2px 3px #777777;
+    box-shadow: 1px 1px #777777;
+    cursor: pointer;
+}
+
+.column-posts:hover {
+    opacity: 0.6;
+}
+
+#posts-image {
+    max-width: 100%;
+}
+
+#caption {
+    margin-bottom: 20px;
+}
+
+.caption {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: normal;
+    line-height: 1.5em;
+    max-width: 100%;
+}
+
+.posts-divider-section {
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+.posts-divider {
+    height: 2px;
+    width: 25%;
+    background-color: black;
 }
 
 .contact {
     background: #252934;
     position: relative;
     top: 1200px;
-    height: 1000px;
+    height: 1500px;
     width: 100%;
 }
 
@@ -408,7 +457,7 @@ footer {
 
 .social-container {
     position: relative;
-    top: 800px;
+    top: 1000px;
     display: flex;
     align-items: center;
 }
