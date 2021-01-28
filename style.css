@@ -567,6 +567,212 @@ footer {
 
 /* Media Queries */
 
+@media only screen and (min-width: 2501px) and (max-width: 5000px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .header {
+        max-width: 5000px;
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .toggle-btn {
+        display: block;
+        width: 100%;
+        left: 2%;
+    }
+
+    .about-me {
+        position: relative;
+        left: 60px;
+    }
+
+    .profile {
+        position: relative;
+        left: 30px;
+    }
+
+    .profile-paragraph {
+        position: relative;
+        right: 31%;
+    }
+
+    #skills {
+        position: relative;
+        left: 50%;
+    }
+
+    .coding-skills {
+        position: relative;
+        left: 75px;
+    }
+
+    #projects {
+        position: relative;
+        left: 40px;
+    }
+
+    .projects {
+        height: 900px;
+        display: block;
+    }
+
+    .project-posts {
+        flex-direction: column;
+        position: relative;
+        left: 35%;
+        text-align: center;
+    }
+
+    #blog {
+        position: relative;
+        left: 20px;
+    }
+
+    .blog {
+        position: relative;
+        left: 1220px;
+    }
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .posts-divider {
+        display: none;
+    }
+
+    .column-posts {
+        position: relative;
+        left: 30%;
+    }
+
+    .contact {
+        height: 1000px;
+        position: relative;
+        top: 1500px;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .social-container {
+        position: relative;
+        top: 1500px;
+        left: 0;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1400px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .header {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .toggle-btn {
+        display: block;
+        width: 100%;
+        left: 2%;
+    }
+
+    .about-me {
+        position: relative;
+        left: 40px;
+    }
+
+    .profile {
+        position: relative;
+        left: 30px;
+    }
+
+    .profile-paragraph {
+        position: relative;
+        right: 31%;
+    }
+
+    #skills {
+        position: relative;
+        left: 460px;
+    }
+
+    .coding-skills {
+        position: relative;
+        left: -20px;
+    }
+
+    .projects {
+        height: 900px;
+        display: block;
+    }
+
+    .project-posts {
+        flex-direction: column;
+        position: relative;
+        left: 6%;
+        text-align: center;
+    }
+
+    .blog {
+        position: relative;
+        left: 340px;
+    }
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .posts-divider {
+        display: none;
+    }
+
+    .column-posts {
+        position: relative;
+        left: 30%;
+    }
+
+    .contact {
+        height: 1000px;
+        position: relative;
+        top: 1500px;
+    }
+
+    form {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .social-container {
+        position: relative;
+        top: 1500px;
+        left: 0;
+    }
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
     html {
         scroll-behavior: smooth;
@@ -601,7 +807,7 @@ footer {
         width: 400px;
         display: block;
         position: relative;
-        right: 70px;
+        right: 95px;
     }
 
     #skills {
@@ -622,23 +828,48 @@ footer {
 
     .projects {
         width: 100vw;
-        margin: auto;
+        height: 800px;
         display: block;
         background-color: #252934;
     }
 
+    .project-posts {
+        flex-direction: column;
+        position: relative;
+        right: 140px;
+    }
+
+    #blog {
+        position: relative;
+        left: -590px;
+        top: -100px;
+    }
+
     .blog {
         width: 100vw;
+        height: 300px;
         position: relative;
         display: block;
-        left: 0;
+        top: 60rem;
         margin: auto;
     }
 
-    .contact {
+    .posts {
+        flex-direction: column;
+        top: -50px;
+        right: 500px;
+        height: 300px;
         width: 100vw;
-        margin: auto;
+    }
+
+    .posts-divider {
+        display: none;
+    }
+
+    .contact {
         display: block;
+        top: 1500px;
+        height: 1000px;
     }
 
     form {
@@ -655,9 +886,7 @@ footer {
     }
 
     footer {
-        display: block;
-        width: 100vw;
-        margin: auto;
+        display: none;
     }
 
     .social-container {
@@ -665,224 +894,9 @@ footer {
         display: flex;
         width: 100vw;
         margin: auto;
+        top: 1500px;
         left: 0;
     }
-
-@media only screen and (min-width: 769px) and (max-width: 1400px) {
-    html {
-        scroll-behavior: smooth;
-    }
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .header {
-        background: white;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .toggle-btn {
-        margin: auto;
-        position: relative;
-        left: 10%;
-    }
-
-    .menu.active {
-        width: 100%;
-        position: relative;
-        left: 5%;
-    }
-
-    .about-me {
-        width: 100vw;
-        position: relative;
-        left: 100px;
-    }
-
-    .projects {
-        width: 100vw;
-        position: relative;
-        background-color: #252934;
-    }
-
-    .blog {
-        width: 100vw;
-        position: relative;
-        display: block;
-        left: 100px;
-    }
-
-    #blog {
-        text-align: center;
-    }
-
-    form {
-        position: relative;
-        display: block;
-    }
-
-    .submit {
-        position: relative;
-        left: 47%;
-        justify-content: center;
-    }
-
-    footer {
-        position: relative;
-        left: 100px;
-    }
-
-    .social-container {
-        position: relative;
-        left: 50%;
-    }
-}
-
-
-@media only screen and (min-width: 1401px) and (max-width: 2500px) {
-    html {
-        scroll-behavior: smooth;
-    }
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .header {
-        background: white;
-        width: 100%;
-        z-index: 999;
-        left: 0;
-    }
-
-    .toggle-btn {
-        display: block;
-        width: 100%;
-        margin: auto;
-        position: relative;
-        left: 2%;
-    }
-
-    .menu.active {
-        width: 100%;
-    }
-
-    .about-me {
-        width: 50%;
-        display: block;
-        margin: auto;
-    }
-
-    .projects {
-        width: 100vw;
-        position: relative;
-        background-color: #252934;
-    }
-
-    #projects {
-        text-align: center;
-    }
-
-    .blog {
-        width: 100vw;
-        position: relative;
-    }
-
-    #blog {
-        position: relative;
-        left: 0;
-        text-align: center;
-    }
-
-    form {
-        position: relative;
-        left: 0;
-        display: block;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width: 2501px) and (max-width: 5000px) {
-    html {
-        scroll-behavior: smooth;
-    }
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .header {
-        background: white;
-        height: 200px;
-        width: 100%;
-        z-index: 999;
-        left: 0;
-    }
-
-    .toggle-btn {
-        display: block;
-        width: 100%;
-        margin: auto;
-        position: relative;
-        left: 2%;
-    }
-
-    .menu.active {
-        width: 100%;
-    }
-
-    .about-me {
-        width: 50%;
-        display: block;
-        margin: auto;
-    }
-
-    .html {
-        width: 35%;
-        height: 280px;
-    }
-
-    .projects {
-        width: 100vw;
-        position: relative;
-        background-color: #252934;
-    }
-
-    #projects {
-        text-align: center;
-    }
-
-    .blog {
-        width: 100vw;
-        position: relative;
-    }
-
-    #blog {
-        position: relative;
-        left: 0;
-        text-align: center;
-    }
-
-    form {
-        position: relative;
-        left: 0;
-        display: block;
-        text-align: center;
-    }
-
-    .social-container {
-        align-items: center;
-    }
-}
-
 
 
 
