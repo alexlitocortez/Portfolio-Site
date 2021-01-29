@@ -622,25 +622,30 @@ footer {
         display: block;
     }
 
+    .column-projects {
+        
+    }
+
     .project-posts {
-        flex-direction: column;
         position: relative;
-        left: 35%;
+        left: 25%;
         text-align: center;
     }
 
     #blog {
         position: relative;
-        left: 20px;
+        left: -530px;
     }
 
     .blog {
         position: relative;
-        left: 1220px;
+        width: auto;
+        margin: auto;
     }
 
-    .posts {
-        flex-direction: column;
+    .column-posts {
+        width: 1000px;
+        height: 500px;
     }
 
     .posts-divider {
@@ -649,7 +654,7 @@ footer {
 
     .column-posts {
         position: relative;
-        left: 30%;
+        left: 600px;
     }
 
     .contact {
