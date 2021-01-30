@@ -162,6 +162,7 @@ footer {
     cursor: pointer;
     border: none;
     position: relative;
+    bottom: 55px;
     right: 55px;
     border-radius: 10px;
     outline: none;
@@ -802,10 +803,6 @@ footer {
         display: block;
         width: 100%;
         left: 2%;
-    }
-
-    .toggle-btn.menu.active span:nth-last-child(2) {
-        transform: translateY();
     }
 
     .profile {
