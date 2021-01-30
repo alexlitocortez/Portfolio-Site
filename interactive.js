@@ -8,8 +8,11 @@ const spanThree = document.getElementById('line-bottom');
 const fName = document.getElementById('fname');
 const icon = document.querySelector('li');
 const fa = document.getElementById('fa');
+const lineTop = document.getElementById('line-top');
+const lineMiddle = document.getElementById('line-middle');
+const lineBottom = document.getElementById('line-bottom');
 
-
+// Create a function that incorporates reversing the X and closing the menu
 
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
@@ -17,6 +20,18 @@ btn.addEventListener('click', () => {
     spanTwo.classList.toggle('foo');
     spanThree.classList.toggle('foo');
 })
+
+menu.addEventListener('click', () => {
+    menu.classList.remove('active');
+    closeX();
+})
+
+function closeX() {
+    lineTop.style.transform = "rotate(0deg) translateY(0px)";
+    lineMiddle.style.transform = "translateX(0px)";
+    lineBottom.style.transform = "rotate(0deg) translateY(0px)"
+}
+
 
 // below listed default settings
 AOS.init({
