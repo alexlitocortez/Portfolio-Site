@@ -166,6 +166,7 @@ footer {
     right: 55px;
     border-radius: 10px;
     outline: none;
+    background-color: #4caf50;
 }
 
 .toggle-btn span {
@@ -174,7 +175,7 @@ footer {
     background: black;
     display: block;
     position: relative;
-    top: 10px;
+    top: 65px;
     margin-top: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     transition: .4s;
@@ -505,7 +506,7 @@ footer {
     position: relative;
     top: -70px;
     left: 670px;
-    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    background: linear-gradient(45deg, grey, white);
     display: inline-block;
 }
 
@@ -526,7 +527,7 @@ footer {
     height: 60px;
     border-radius: 100%;
     display: block;
-    background: linear-gradient(45deg, #00b5f5, #002a8f);
+    background: linear-gradient(45deg, grey, white);
     transition: all 265ms ease-out;
 }
 
@@ -545,25 +546,11 @@ footer {
 
 .social-icons:hover i {
     color: #00b5f5;
-    background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+    background: -webkit-linear-gradient(45deg, white, grey);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
     transform: scale(2.2);
-}
-
-.footer {
-    font-size: 24px;
-    background-image: linear-gradient(45deg, #00b5f5, #002a8f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
-}
-
-.twenty-one {
-    font-size: 24px;
-    background-image: linear-gradient(45deg, #00b5f5, #002a8f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
 }
 
 /* Media Queries */
@@ -700,6 +687,10 @@ footer {
         display: block;
         width: 100%;
         left: 2%;
+    }
+
+    .toggle-btn span {
+        background-color: #4caf50;
     }
 
     .about-me {
