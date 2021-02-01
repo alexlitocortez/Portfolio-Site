@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    margin-top: 5%;
+}
+
+h1 {
+    color: #4caf50;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+li {
+    text-align: left;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
+    max-width: 50%;
+    position: relative;
+    top: 5%;
+    left: 25%;
+    font-size: 16pt;
+    line-height: 160%;
+}
+
