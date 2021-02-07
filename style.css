@@ -558,13 +558,55 @@ footer {
 
 /* Media Queries */
 
+@media (min-width: 481px) and (max-width: 768px) {
 
+    .projects {
+        height: 1000px;
+    }
 
-@media (min-width: 376px) and (max-width: 479px) {
+    .project-posts {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 35%;
+    }
 
     #skills {
         left: 40%;
     }
+
+    .skills {
+        position: relative;
+        left: 40%;
+    }
+
+    #blog {
+        margin-bottom: 5%;
+    }
+
+    .blog {
+        position: relative;
+        left: 20%;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        top: 3%;
+        right: 50%;
+    }
+
+    .contact {
+        height: 900px;
+    }
+
+    form {
+        position: relative;
+        left: 25%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
 
     .coding-skills {
         right: 10%;
@@ -583,7 +625,6 @@ footer {
         display: flex;
         flex-direction: column;
         top: 5%;
-        right: 50%;
     }
 
     .blog {
