@@ -606,40 +606,8 @@ footer {
     }
 }
 
-@media (min-width: 376px) and (max-width: 480px) {
-
-    .coding-skills {
-        right: 10%;
-    }
-
-    .projects {
-        height: 1500px;
-    }
-
-    .project-posts {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .posts {
-        display: flex;
-        flex-direction: column;
-        top: 5%;
-    }
-
-    .blog {
-        left: 20%;
-        margin-bottom: 5%;
-    }
-
-    .contact {
-        height: 1000px;
-    }
-
-    form {
-        position: relative;
-        left: 0;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+    
 }
 
 
