@@ -8,10 +8,6 @@ html, body {
     padding: 0px;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -558,8 +554,23 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile {
+        width: 600px;
+    }
+    
+    .projects {
+        display: flex;
+        flex-direction: row;
+    }
 
+    .project-posts {
+        position: relative;
+        left: 300px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
     .projects {
         height: 1000px;
     }
@@ -607,8 +618,13 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    html {
+        overflow-x: hidden;
+    }
+
     .toggle-btn {
         position: relative;
+        right: 75%;
     }
 
     .profile {
@@ -630,6 +646,11 @@ footer {
 
     .posts {
         flex-direction: column;
+    }
+
+    #blog {
+        position: relative;
+        left: -550px;
     }
 
     .column-posts {
