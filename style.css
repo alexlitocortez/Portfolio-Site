@@ -258,32 +258,6 @@ footer {
     left: 47%;
 }
 
-.coding-skills {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 100px;
-    right: 10px;
-}
-
-#html {
-    width: 140px;
-}
-
-#css {
-    width: 100px;
-    position: relative;
-    left: 20px;
-    margin-top: 30px;
-}
-
-#javascript {
-    width: 100px;
-    position: relative;
-    left: 20px;
-    margin-top: 30px;
-}
-
 .column {
     float: left;
     width: 50%;
@@ -306,6 +280,11 @@ footer {
     margin-bottom: 5%;
 }
 
+.project-posts {
+    width: 150em;
+    display: flex;
+}
+
 .blog {
     position: relative;
     left: 570px;
@@ -322,10 +301,6 @@ footer {
     left: 670px;
 }
 
-.project-posts {
-    width: 150em;
-    display: flex;
-}
 
 .column-projects {
     width: 300px;
@@ -558,15 +533,15 @@ footer {
     .profile {
         width: 600px;
     }
-    
+
     .projects {
         display: flex;
         flex-direction: row;
     }
 
     .project-posts {
-        position: relative;
-        left: 300px;
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -673,14 +648,3 @@ footer {
         left: 30%;
     }
 }
-
-
-
-/* min-width: CSS takes effect when equal or greater than min-width */
-
-/* max-width: CSS takes effect when equal or less than max-width */
-
-
-/* @media (min-width: 480px) and (max-width: 768px) { */
-
-/* } */
