@@ -6,6 +6,7 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 * {
@@ -281,16 +282,14 @@ footer {
 }
 
 .project-posts {
-    width: 150em;
     display: flex;
 }
 
-.blog {
+.column-projects {
+    height: 20em;
     position: relative;
-    left: 570px;
-    top: 750px;
-    width: 300px;
-    animation-delay: .5s;
+    cursor: pointer;
+    margin: auto;
 }
 
 #blog {
@@ -301,16 +300,26 @@ footer {
     left: 670px;
 }
 
-
-.column-projects {
-    width: 300px;
-    height: 20em;
-    margin-left: 10%;
-    background-color: white;
+.blog {
     position: relative;
-    left: 3rem;
+    top: 750px;
+    width: 100%;
+    animation-delay: .5s;
+}
+
+.posts {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.column-posts {
+    width: 33.33%;
+    box-shadow: 1px 1px #777777;
     cursor: pointer;
 }
+
+
 
 .button-overlay {
     position: absolute;
@@ -348,23 +357,7 @@ footer {
     background-color: none;
 }
 
-.posts {
-    width: 100em;
-    height: 400px;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    right: 39rem;
-}
 
-.column-posts {
-    width: 33.33%;
-    width: 300px;
-    margin-left: 10%;
-    text-align: center;
-    box-shadow: 1px 1px #777777;
-    cursor: pointer;
-}
 
 #posts-image {
     max-width: 100%;
@@ -530,18 +523,12 @@ footer {
 /* Media Queries */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .profile {
-        width: 600px;
+    form {
+        left: 25%;
     }
 
-    .projects {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .project-posts {
-        display: flex;
-        flex-direction: row;
+    .submit {
+        left: 45%;
     }
 }
 
@@ -552,18 +539,7 @@ footer {
 
     .project-posts {
         display: flex;
-        flex-direction: column;
         position: relative;
-        right: 35%;
-    }
-
-    #skills {
-        left: 40%;
-    }
-
-    .skills {
-        position: relative;
-        left: 40%;
     }
 
     #blog {
@@ -572,14 +548,13 @@ footer {
 
     .blog {
         position: relative;
-        left: 20%;
+        width: 100%;
     }
 
     .posts {
         display: flex;
         flex-direction: column;
-        top: 3%;
-        right: 50%;
+        margin-left: 35%;
     }
 
     .contact {
@@ -589,6 +564,11 @@ footer {
     form {
         position: relative;
         left: 25%;
+    }
+
+    .submit {
+        position: relative;
+        left: 43%;
     }
 }
 
@@ -605,7 +585,7 @@ footer {
     .profile {
         width: 300px;
         position: relative;
-        right: 95px;
+        right: 30%;
     }
 
     .projects {
@@ -615,8 +595,8 @@ footer {
     .project-posts {
         flex-direction: column;
         position: relative;
-        right: 25%;
         width: 400px;
+        display: block;
     }
 
     .posts {
@@ -625,13 +605,13 @@ footer {
 
     #blog {
         position: relative;
-        left: -550px;
+        left: 0;
+        margin-bottom: 5%;
     }
 
     .column-posts {
         position: relative;
-        bottom: 115px;
-        right: 95px;
+        left: 35%;
     }
 
     .contact {
@@ -639,12 +619,14 @@ footer {
     }
 
     form {
-        left: 30px;
+        left: 15%;
         width: 500px;
     }
 
     .submit {
         position: relative;
-        left: 30%;
+        left: 38%;
     }
 }
+
+
